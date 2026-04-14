@@ -52,6 +52,8 @@ A route was configured:
 
 This allows inbound and outbound internet traffic for the public subnet.
 
+![Internet Gateway](images/internet-gateway.png)
+
 ---
 
 ### 3. NAT Gateway
@@ -65,6 +67,8 @@ Its role is to allow:
 
 This ensures that private resources remain secure but can still install packages, updates, or access external services.
 
+![NAT Gateway](images/nat-gateway.png)
+
 ---
 
 ### 4. Route Tables
@@ -75,9 +79,13 @@ Two route tables were configured:
 - Route: `0.0.0.0/0 → Internet Gateway`
 - Associated with the public subnet
 
+![Public Route Table](images/public-route-table.png)
+
 #### Private Route Table
 - Route: `0.0.0.0/0 → NAT Gateway`
 - Associated with the private subnet
+
+![Private Route Table](images/private-route-table.png)
 
 This routing setup controls how traffic flows between internal and external networks.
 
@@ -90,6 +98,8 @@ Security Groups were used as virtual firewalls.
 #### Public EC2 Security Group
 - Allows SSH (port 22) from my IP
 - Allows HTTP (port 80) for web access
+
+![Public Security Group](images/public-security-group.png)
 
 #### Private EC2 Security Group
 - Allows SSH only from the public EC2 instance
