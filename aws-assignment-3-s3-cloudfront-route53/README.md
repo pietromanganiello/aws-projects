@@ -19,7 +19,7 @@ User → Cloudflare → Route 53 → CloudFront → S3
 - Route 53 handles AWS-side DNS (subdomain delegation)  
 - Cloudflare manages the main domain DNS externally  
 
-![Architecture Diagram](./images/architecture.diagram.png)
+![Architecture Diagram](./images/architecture-diagram.png)
 
 ---
 
