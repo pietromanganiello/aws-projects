@@ -140,7 +140,7 @@ Key setup:
 This allowed:
 Cloudflare → Route 53 → CloudFront → S3 flow
 
-![Cloudflare DNS](./images/cloudflare-dns.png)
+![Cloudflare DNS](./images/cloudflare-dns-config.png)
 
 ---
 
@@ -155,7 +155,7 @@ This confirms:
 - SSL certificate is working  
 - CloudFront is delivering content from S3  
 
-![Final Website](./images/final-website.png)
+![Final Website](./images/final-domain-working.png)
 
 ---
 
