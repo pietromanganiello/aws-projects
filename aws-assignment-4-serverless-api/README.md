@@ -46,7 +46,9 @@ Client → Cloudflare DNS → API Gateway Custom Domain → API Gateway Routes �
                                                         ↓  
                                                       AWS WAF
 
-(Architecture diagram to be added)
+## Architecture Diagram
+
+![Architecture](./images/architecture-diagram.png)
 
 ---
 
